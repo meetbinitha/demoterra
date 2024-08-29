@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Git checkout'){
             steps {
-                git 'Jenkinsfile'
+                git 'https://github.com/meetbinitha/demoterra'
             }
         }
         stage('azurelogin') {
