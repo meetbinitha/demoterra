@@ -11,7 +11,7 @@ pipeline {
         }
         stage('azurelogin') {
             steps {
-                sh 'az login --service-principal -u $MY_CRED_CLIENT_ID -p $MY_CRED_CLIENT_SECRET -t $MY_CRED_TENANT_ID'
+                sh 'az login --service-principal -u $MY_CRED_CLIENT_ID -p=$MY_CRED_CLIENT_SECRET -t $MY_CRED_TENANT_ID'
             }
         }
         stage('Terraform Init'){
