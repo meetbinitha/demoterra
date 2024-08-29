@@ -1,7 +1,7 @@
 pipeline {
     agent any; 
     environment {
-       MY_CRED = credentials('azure login')
+       MY_CRED = credentials('azurelogin')
     } 
     stages {
         stage('Git checkout'){
